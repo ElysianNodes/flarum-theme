@@ -1,0 +1,218 @@
+/* ==========================================
+   AMOLED BLACK & PURPLE OVERHAUL MADE BY  ELYSIANNODES.UK
+   YOU CAN USE ELYSIANNODES.UK TO HOST YOUR FORUM FOR FREE
+                WE LOVE ELYSIANNODES.UK
+   ========================================== */
+
+:root {
+  --bg-amoled: #050508;
+  --bg-card: #0d0d14;
+  --bg-card-hover: #141420;
+  --bg-input: #12121a;
+  
+  --purple-primary: #8b5cf6;
+  --purple-glow: #a78bfa;
+  --purple-muted: #6d28d9;
+
+  --text-main: #f3f4f6;
+  --text-muted: #9ca3af;
+  --border-subtle: rgba(255, 255, 255, 0.05);
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --transition-smooth: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --shadow-purple: 0 4px 20px rgba(139, 92, 246, 0.15);
+  --shadow-purple-hover: 0 10px 30px rgba(139, 92, 246, 0.25);
+  --blur-glass: blur(16px);
+}
+
+body, #app, .App {
+  background-color: var(--bg-amoled) !important;
+  color: var(--text-main) !important;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+a, .DiscussionListItem-title {
+  color: var(--text-main);
+  transition: var(--transition-smooth);
+}
+a:hover, .DiscussionListItem-title:hover {
+  color: var(--purple-glow) !important;
+}
+
+.App-header {
+  background: color-mix(in srgb, var(--bg-amoled) 80%, transparent) !important;
+  backdrop-filter: var(--blur-glass);
+  -webkit-backdrop-filter: var(--blur-glass);
+  border-bottom: 1px solid var(--border-subtle) !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+}
+
+.Header-title {
+  color: var(--text-main) !important;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.Search-input {
+  border-radius: var(--radius-sm) !important;
+  background: var(--bg-input) !important;
+  border: 1px solid var(--border-subtle) !important;
+  color: var(--text-main) !important;
+  transition: var(--transition-smooth);
+}
+
+.Search-input:focus {
+  background: #161622 !important;
+  border-color: var(--purple-primary) !important;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--purple-primary) 25%, transparent) !important;
+}
+
+.Button, .Button--secondary {
+  border-radius: var(--radius-sm);
+  background: var(--bg-input);
+  color: var(--text-main);
+  border: 1px solid var(--border-subtle);
+  font-weight: 600;
+  transition: var(--transition-smooth);
+}
+
+.Button--primary, .App-primaryControl .Button {
+  background: var(--purple-primary) !important;
+  color: #ffffff !important;
+  border: none !important;
+  box-shadow: var(--shadow-purple);
+}
+
+.Button--primary:hover, .App-primaryControl .Button:hover {
+  transform: translateY(-2px);
+  background: var(--purple-glow) !important;
+  box-shadow: var(--shadow-purple-hover);
+}
+
+.DiscussionList-discussions > li {
+  margin-bottom: 14px;
+  border-bottom: none !important;
+}
+
+.DiscussionListItem {
+  background: var(--bg-card) !important;
+  border-radius: var(--radius-md) !important;
+  border: 1px solid var(--border-subtle) !important;
+  transition: var(--transition-smooth);
+  padding: 18px 22px;
+}
+
+.DiscussionListItem:hover {
+  transform: translateY(-2px);
+  background: var(--bg-card-hover) !important;
+  border-color: color-mix(in srgb, var(--purple-primary) 40%, transparent) !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.Badge {
+  background: var(--purple-muted) !important;
+  color: #fff !important;
+}
+.Avatar {
+  border-radius: var(--radius-sm) !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.Navigation-list > li > a, 
+.Navigation-list > li > button {
+  border-radius: var(--radius-sm) !important;
+  margin-bottom: 5px;
+  color: var(--text-muted) !important;
+  transition: var(--transition-smooth);
+}
+
+.Navigation-list > li > a:hover {
+  background: rgba(255, 255, 255, 0.03) !important;
+  color: var(--text-main) !important;
+}
+
+.Navigation-list > li.active > a {
+  background: color-mix(in srgb, var(--purple-primary) 15%, transparent) !important;
+  color: var(--purple-glow) !important;
+  font-weight: 700;
+  border-left: 3px solid var(--purple-primary);
+}
+.PostStream-item {
+  margin-bottom: 25px;
+}
+
+.Post {
+  background: var(--bg-card) !important;
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  border: 1px solid var(--border-subtle) !important;
+}
+
+.Post-header {
+  color: var(--text-muted) !important;
+}
+
+.Post-user name, .Post-user a {
+  color: var(--purple-glow) !important;
+  font-weight: 600;
+}
+.TagsLabel .TagLabel {
+  border-radius: 4px;
+}
+
+code, pre {
+  border-radius: var(--radius-sm) !important;
+  font-family: ui-monospace, SFMono-Regular, monospace !important;
+  border: none !important;
+}
+
+pre {
+  padding: 16px !important;
+  background: #050508 !important;
+  border: 1px solid var(--border-subtle) !important;
+}
+
+code {
+  background: rgba(139, 92, 246, 0.15) !important;
+  color: var(--purple-glow) !important;
+  padding: 3px 6px;
+}
+.Hero {
+  background: linear-gradient(135deg, #120d24 0%, var(--bg-amoled) 100%) !important;
+  border: 1px solid color-mix(in srgb, var(--purple-primary) 30%, transparent) !important;
+  border-radius: var(--radius-lg);
+  padding: 45px 35px !important;
+  box-shadow: var(--shadow-purple);
+}
+
+.Hero h2 {
+  font-size: 2.4em;
+  font-weight: 900;
+  letter-spacing: -1px;
+  color: #ffffff;
+}
+
+.Hero .container {
+  color: var(--text-muted);
+}
+
+.Composer {
+  background: color-mix(in srgb, var(--bg-card) 90%, transparent) !important;
+  backdrop-filter: var(--blur-glass);
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  border: 1px solid var(--border-subtle) !important;
+  box-shadow: 0 -15px 40px rgba(0, 0, 0, 0.6) !important;
+}
+
+.Composer-header {
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.TextEditor-textarea {
+  background: transparent !important;
+  color: var(--text-main) !important;
+  font-size: 15px !important;
+}

@@ -3,7 +3,7 @@
 A modern, high-performance custom CSS theme for Flarum forums developed by ElysianNodes. Built with a deep AMOLED black background, vibrant electric purple accents, squircle components, and native glassmorphism effects. 
 
 This layout is fully optimized to be Less-safe, avoiding standard CSS variable function issues that break the Flarum preprocessor, and it uses no external dependencies or `@import` declarations.
-
+Demo: https://forums.jimi.lol/
 ---
 
 ## Features

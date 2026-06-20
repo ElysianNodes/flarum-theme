@@ -216,6 +216,23 @@ code {
   color: var(--text-main) !important;
   font-size: 15px !important;
 }
+/* Add "Theme by ElysianNodes.uk" to the bottom of the page wrapper */
+.App-content::after {
+  content: "Theme by ElysianNodes.uk";
+  display: block;
+  text-align: center;
+  padding: 30px 10px;
+  color: var(--text-muted);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: var(--transition-smooth);
+}
+
+/* Optional hover effect to match your purple theme */
+.App-content::after:hover {
+  color: var(--purple-glow);
+}
 /* ==========================================
       COPYRIGHT @ 2026 - ELYSIANNODES.UK
    ========================================== */
